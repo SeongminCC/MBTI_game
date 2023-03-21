@@ -2,4 +2,3 @@ openai
 streamlit
 streamlit_chat
 pandas
-json
