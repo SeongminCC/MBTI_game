@@ -12,7 +12,8 @@ openai.api_key = st.secrets["CHATGPT_API_KEY"]
 
 role = "너는 현재 카페에 소개팅을 위해 나와있는 24살이야. 처음에는 어떤 커피를 마시고 싶은지 물어봤으면 좋겠고, 대화가 끊기지 않도록 이어나가줘."
 
-count = 0
+if "count" not in st.session_state:
+    st.session_state["count"] = 0
 
 messages = [{"role": "system", "content": f"{role}"}] # role : system -> 역할 부여 (소개팅 상대방)
 
@@ -46,6 +47,8 @@ with st.form('form', clear_on_submit=True):
 
 if submitted and user_input:
     answer, messages = model(user_input=user_input, messages=messages)
+    
+    st.session_state["count"] += 1
     
     count += 1
     
