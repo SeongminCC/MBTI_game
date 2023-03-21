@@ -20,7 +20,7 @@ if "count" not in st.session_state:
 
 # messages = [{"role": "user", "content": f"{role}"}]
 messages = [{"role": "system", "content": f"{role}"}, {"role": "user", "content": "안녕 나를 남자친구로 대해줘. 우리는 100일정도 만난 연인사이고 서로를 부를 때 '자기' 라는 호칭을 사용해"}] 
-messages.append({"role": "user", "content": "하지만 너는 나에게 화가 나있어. 그래서 너의 말투는 무뚝뚝하고 욕도 하면서 화난 말투를 사용해야돼. 내가 아무리 미안하다고 사과해도 넌 절대로 화가 풀리면 안돼."}
+messages.append({"role": "user", "content": "하지만 너는 나에게 화가 나있어. 그래서 너의 말투는 무뚝뚝하고 욕도 하면서 화난 말투를 사용해야돼. 내가 아무리 미안하다고 사과해도 넌 절대로 화가 풀리면 안돼."})
 
 def model(user_input, messages):
     user_content = user_input  # 사용자 대화 입력
