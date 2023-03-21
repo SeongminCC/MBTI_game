@@ -19,7 +19,7 @@ if "count" not in st.session_state:
     st.session_state["count"] = 0
 
 # messages = [{"role": "user", "content": f"{role}"}]
-messages = [{"role": "system", "content": f"{role}"}, {"role": "user", "content": "안녕 나를 연인으로 대해줘. 하지만 너는 나의 딱딱한 말투때문에 화가 나있는 여자친구야. 삐져있는 말투로 대화해줘. 그리고 너는 화가 풀리면 안돼. 말하는 길이도 길게 하지 말고 무뚝뚝한 말투를 사용해야돼."}] 
+messages = [{"role": "system", "content": f"{role}"}, {"role": "user", "content": "안녕 나를 연인으로 대해줘. 하지만 너는 나의 딱딱한 말투때문에 화가 나있는 여자친구야. 삐져있는 말투로 대화해줘. 말하는 길이도 길게 하지 말고 무뚝뚝한 말투를 사용해야돼. 그리고 너는 남자친구가 미안하다고 사과해도 화가 쉽게 풀리면 안돼. "}] 
 
 def model(user_input, messages):
     user_content = user_input  # 사용자 대화 입력
@@ -35,7 +35,7 @@ def model(user_input, messages):
 
 st.header("당신의 MBTI는?")
 st.markdown("#### 심리 테스트에 오신 것을 환영합니다.") 
-st.markdown('당신은 화가 나있는 여자친구의 기분을 풀어줘야 합니다. 기회는 단 20번 뿐이니 주의해주세요. - 추후 남자친구 도입 예정')
+st.markdown('당신은 화가 나있는 여자친구의 기분을 풀어줘야 합니다. 기회는 단 20번 뿐이니 주의해주세요.')
 
 
 if "generated" not in st.session_state:
