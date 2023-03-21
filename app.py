@@ -10,7 +10,10 @@ import pandas as pd
 
 openai.api_key = st.secrets["CHATGPT_API_KEY"]
 
-role = "너는 현재 카페에 소개팅을 위해 나와있는 24살이야. 처음에는 어떤 커피를 마시고 싶은지 물어봤으면 좋겠고, 대화가 끊기지 않도록 이어나가줘."
+role_dict = {"소개팅" : "너는 현재 카페에 소개팅을 위해 나와있는 24살이야. 처음에는 어떤 커피를 마시고 싶은지 물어봤으면 좋겠고, 대화가 끊기지 않도록 이어나가줘.",
+             "상담" : "너는 상대의 MBTI를 파악하기 위해 다양한 질문을 던져야돼. 마치 상담사와 같은 역할을 하는거지. 처음에는 기본적인 이름과 나이를 물어보면서 대화를 시작해줘."}
+
+role = role_dict["상담"]
 
 if "count" not in st.session_state:
     st.session_state["count"] = 0
