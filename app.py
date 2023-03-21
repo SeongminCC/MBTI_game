@@ -19,7 +19,8 @@ role = role_dict["ENTP"]
 if "count" not in st.session_state:
     st.session_state["count"] = 0
 
-messages = [{"role": "system", "content": f"{role}"}] # role : system -> 역할 부여 (소개팅 상대방)
+messages = [{"role": "user", "content": f"{role}"}]
+# messages = [{"role": "system", "content": f"{role}"}] # role : system -> 역할 부여 (소개팅 상대방)
 
 def model(user_input, messages):
     user_content = user_input  # 사용자 대화 입력
