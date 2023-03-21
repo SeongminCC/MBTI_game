@@ -1,5 +1,4 @@
 import os
-from dotenv import load_dotenv
 import openai
 
 import streamlit as st
@@ -9,7 +8,6 @@ import pandas as pd
 
 
 
-load_dotenv()
 openai.api_key = os.getenv("CHATGPT_API_KEY")
 
 role = "너는 현재 카페에 소개팅을 위해 나와있는 24살이야. 처음에는 어떤 커피를 마시고 싶은지 물어봤으면 좋겠고, 대화가 끊기지 않도록 이어나가줘."
