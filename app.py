@@ -20,7 +20,7 @@ if "count" not in st.session_state:
     st.session_state["count"] = 0
 
 # messages = [{"role": "user", "content": f"{role}"}]
-messages = [{"role": "system", "content": f"{role}"}, {"role": "user", "content": "안녕, 친구처럼 대화하자!"}] 
+messages = [{"role": "system", "content": f"{role}"}, {"role": "user", "content": "안녕 나를 연인으로 대해줘. 하지만 너는 나의 딱딱한 말투때문에 화가 나있는 여자친구야. 삐져있는 말투로 대화해줘"}] 
 
 def model(user_input, messages):
     user_content = user_input  # 사용자 대화 입력
