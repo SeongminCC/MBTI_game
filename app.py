@@ -8,9 +8,6 @@ import pandas as pd
 import json
 
 
-
-# openai.api_key = "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"
-
 load_dotenv()
 openai.api_key = os.getenv("CHATGPT_API_KEY")
 
@@ -68,25 +65,3 @@ for i in range(len(st.session_state['past'])):
 
 
 
-
-# openai.api_key = "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"
-
-# messages = message()
-
-# while True:
-#     user_content = input("user : ")  # 사용자 대화 입력
-#     if user_content == '즐거웠어':
-#         print("저도 즐거웠습니다. 들어가세요~~^^")
-#         break
-
-#     messages.append({'role' : 'user', 'content' : f"{user_content}"})  # message에 사용자 입력 저장
-    
-#     completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=messages)  
-
-#     assistant_content = completion.choices[0].message['content'].strip()  # 사용자 말에 대한 대답
-#     messages.append({'role' : 'assistant', 'content' : f"{assistant_content}"})
-
-#     print(f"GPT : {assistant_content}")
-#     # print(completion['choices'][0]['message']['content'])
-
-# print(messages)
