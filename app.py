@@ -29,7 +29,7 @@ def model(user_input, messages):
     return assistant_content, messages
 
 
-st.header("두근두근 소개팅")
+st.header("MBTI 소개팅")
 st.markdown("#### 소개팅에 참가하신 것을 환영합니다.") 
 st.markdown('대화는 총 20번 동안 이루어지며, 만약 도중 대화를 그만하길 원하신다면 "즐거웠어" 라고 말해주세요!!')
 
