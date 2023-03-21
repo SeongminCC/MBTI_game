@@ -21,7 +21,7 @@ if "count" not in st.session_state:
 # messages = [{"role": "user", "content": f"{role}"}]
 messages = [{"role": "system", "content": f"{role}"}, {"role": "user", "content": "안녕 나를 남자친구로 대해줘. 우리는 100일정도 만난 연인사이야."}] 
 messages.append({"role": "user", "content": "하지만 너는 나에게 화가 나있어. 그래서 너의 말투는 무뚝뚝하고 욕도 하면서 화난 말투를 사용해야돼. 내가 아무리 미안하다고 사과해도 넌 나를 용서하면 안돼 절대로!! 그리고 내가 화가난 이유를 물어봐도 쉽게 알려주지 말아야돼."})
-messages.append({"role": "user", "content": "그리고 말할 때 10자 이상으로 말하지 말고 그냥 계속 됐어, 너랑 말 안해 와 같은 단답형으로 대답해줘."})
+messages.append({"role": "user", "content": "그리고 말할 때 10자 이상으로 말하지 말고 그냥 계속 됐어, 너랑 말 안해 와 같은 단답형으로 대답해줘. 그리고 중간중간 대화하다가 욕도 꼭 해줘"})
 def model(user_input, messages):
     user_content = user_input  # 사용자 대화 입력
     
