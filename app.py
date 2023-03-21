@@ -55,7 +55,7 @@ if submitted and user_input:
 
     
 if st.button('현재 대화 횟수'):
-    st.write(f"현재 대화 횟수 : {count}")
+    st.write(f"현재 대화 횟수 : {st.session_state["count"]}")
 
 for i in range(len(st.session_state['past'])):
     message(st.session_state['past'][i], is_user=True, key=str(i) + '_user')
