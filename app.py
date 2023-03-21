@@ -50,8 +50,6 @@ if submitted and user_input:
     
     st.session_state["count"] += 1
     
-    count += 1
-    
     st.session_state.past.append(user_input)
     st.session_state.generated.append(answer)
 
