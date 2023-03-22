@@ -96,7 +96,7 @@ def basic_info_page():
         st.session_state['gender'] = None
         st.session_state['age'] = None
 
-
+    st.markdown("#### 설정을 모두 완료하셨다면 다음 페이지로 넘어가주세요~~")
     
 
 
