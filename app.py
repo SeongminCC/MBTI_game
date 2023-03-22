@@ -29,7 +29,7 @@ def main():
         st.session_state['user_message'] = []
         
     if "count" not in st.session_state:
-        st.session_state["count"] = 20
+        st.session_state["count"] = 10
         
         
 def basic_info_page():
@@ -168,7 +168,7 @@ def result_page():
                 # 게임 소개
                 if st.session_state['selected_role'] == "연애의 고수":
                     st.markdown(f"당신은 이제부터 화가 난 {st.session_state['rev_gender']}친구를 달래줘야합니다.")
-                    st.markdown(f"하지만 대화가 20번이 넘어가면 {st.session_state['rev_gender']}친구가 화가 나 차단을 해버리니 조심하세요!!")
+                    st.markdown(f"하지만 대화가 10번이 넘어가면 {st.session_state['rev_gender']}친구가 화가 나 차단을 해버리니 조심하세요!!")
                     st.markdown(f"{st.session_state['rev_gender']}친구가 말을 심하게 한다고 너무 상처받지 마세요. 상처받은건 당신이 바람을 펴 화가 단단히 난 당신의 {st.session_state['rev_gender']}친구이니까요. 사귄지 100일밖만에 바람을 핀 스스로를 탓하며 {st.session_state['rev_gender']}친구의 화를 풀어주세요!!!")
 
                 if st.session_state['selected_role'] == "팀플 지옥":
